@@ -10,24 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
-
-int	ft_isprint(int c);
-
-int	main(void)
-{
-	int	c;
-
-	c = 0;
-	while (c <= '~')
-	{
-		printf("Para %c o valor escola é %i\n", c, ft_isprint(c));
-		c++;
-	}
-}
-
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 127)

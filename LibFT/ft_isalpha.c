@@ -10,25 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
-
-int	ft_isalpha(int c);
-
-int	main(void)
-{
-	int	c;
-
-	c = 32;
-	while (c <= 126)
-	{
-		printf("Para %c M = é %i\n", c, ft_isalpha(c));
-		printf("Para %c O = é %i\n\n", c, isalpha(c));
-		c++;
-	}
-}
-
 int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
